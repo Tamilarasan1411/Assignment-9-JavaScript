@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nowshowing.html">Now Showing</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+    </nav>
+   
+    <h1>Booking Page</h1>
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Search movies...">
+      <button id="search-button" onclick="searchMovies()">Search</button>
+    </div>
+
+    <select id="genre-filter" onchange="filterMovies()">
+      <option value="">All genres</option>
+      <option value="commercial">Commercial</option>
+      <option value="action">Action</option>
+      <option value="mass">Mass</option>
+    </select>
+    
+      <div class="movies">
+        <div class="movie" data-genre="commercial">
+          <h2>Movie: Bigil</h2>
+          <h2>Date and Time: 09/05/2023 @10:00 AM</h2>
+          <img src="Bigil.jpg" alt="movie poster" width="350" height="150">
+          <p><b>Total seats:</b> 150</p>
+          <p><b>Booked seats:</b> 116</p>
+          <p><b>Available seats:</b> 34</p>
+          <p><b>Fare:</b> 180+GST</p>
+          <button class="book-button" onclick="location.href='seat.html'">View Seats</button>
+        </div>
+        
+        <div class="movie" data-genre="action">
+          <h2>Movie: Ghilli</h2>
+          <h2>Date and Time: 09/05/2023 @01:00 PM</h2>
+          <img src="Ghilli.jpg" alt="movie poster" width="350" height="150">
+          <p><b>Total seats:</b> 150</p>
+          <p><b>Booked seats:</b> 123</p>
+          <p><b>Available seats:</b> 27</p>
+          <p><b>Fare:</b> 180+GST</p>
+          <button class="book-button" onclick="location.href='seat.html'">View Seats</button>
+        </div>
+
+        <div class="movie" data-genre="mass">
+          <h2>Movie: Pokkiri</h2>
+          <h2>Date and Time: 09/05/2023 @07:00 PM</h2>
+          <img src="Pokkiri.jpg" alt="movie poster" width="350" height="150">
+          <p><b>Total seats:</b> 150</p>
+          <p><b>Booked seats:</b> 103</p>
+          <p><b>Available seats:</b> 47</p>
+          <p><b>Fare:</b> 180+GST</p>
+          <button class="book-button" onclick="location.href='seat.html'">View Seats</button>
+        </div>
+      </div>
+      <div id="timer-container">
+        <p id="timer"></p>
+      </div> 
+  <script src="script.js"></script>    
+ </body>
+</html>

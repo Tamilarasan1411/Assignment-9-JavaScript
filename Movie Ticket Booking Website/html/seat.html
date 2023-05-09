@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nowshowing.html">Now Showing</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+    </nav>
+   <div class="screen">
+   <div class="screencontent">Screen is here</div>
+   </div>
+   <div id="booking-box">
+    <div id="booking-details">
+      <p>Movie: <span id="movie-name">Pokkiri</span></p>
+      <p>Selected seats: <span id="selected-seats">0</span></p>
+      <p>Seat numbers: <span id="seat-numbers"></span></p>
+      <p>Total price: <span id="total-price">Rs. 0</span></p>
+      <p>GST (2%): <span id="gst-price">Rs. 0</span></p>
+      <p>Total amount: <span id="total-amount">Rs. 0</span></p>
+      <button class="book-button" onclick="checkAndRedirect()">Payment</button>
+    </div>  
+  </div> 
+    <div class="theatre">
+        <div class="seating">
+            <div class="seats">
+              <div class="seat">1</div>
+              <div class="seat">2</div>
+              <div class="seat">3</div>
+              <div class="seat occupied">4</div>
+              <div class="seat occupied">5</div>
+              <div class="seat">6</div>
+              <div class="seat occupied">7</div>
+              <div class="seat occupied">8</div>
+              <div class="seat occupied">9</div>
+              <div class="seat occupied">10</div>
+              <div class="seat occupied">11</div>
+              <div class="seat occupied">12</div>
+              <div class="seat occupied">13</div>
+              <div class="seat">14</div>
+              <div class="seat">15</div>
+              <div class="seat">16</div>
+              <div class="seat">17</div>
+              <div class="seat occupied">18</div>
+              <div class="seat occupied">19</div>
+              <div class="seat occupied">20</div>
+              <div class="seat">21</div>
+              <div class="seat occupied">22</div>
+              <div class="seat">23</div>
+              <div class="seat occupied">24</div>
+              <div class="seat occupied">25</div>
+              <div class="seat occupied">26</div>
+              <div class="seat">27</div>
+              <div class="seat">28</div>
+              <div class="seat occupied">29</div>
+              <div class="seat occupied">30</div>
+              <div class="seat occupied">31</div>
+              <div class="seat occupied">32</div>
+              <div class="seat occupied">33</div>
+              <div class="seat occupied">34</div>
+              <div class="seat occupied">35</div>
+              <div class="seat occupied">36</div>
+              <div class="seat occupied">37</div>
+              <div class="seat occupied">38</div>
+              <div class="seat occupied">39</div>
+              <div class="seat occupied">40</div>
+              <div class="seat occupied">41</div>
+              <div class="seat occupied">42</div>
+              <div class="seat occupied">43</div>
+              <div class="seat occupied">44</div>
+              <div class="seat occupied">45</div>
+              <div class="seat">46</div>
+              <div class="seat">47</div>
+              <div class="seat">48</div>
+              <div class="seat occupied">49</div>
+              <div class="seat occupied">50</div>
+              <div class="seat occupied">51</div>
+              <div class="seat occupied">52</div>
+              <div class="seat">53</div>
+              <div class="seat occupied">54</div>
+              <div class="seat occupied">55</div>
+              <div class="seat">56</div>
+              <div class="seat">57</div>
+              <div class="seat occupied">58</div>
+              <div class="seat">59</div>
+              <div class="seat occupied">60</div>
+              <div class="seat occupied">61</div>
+              <div class="seat occupied">62</div>
+              <div class="seat occupied">63</div>
+              <div class="seat occupied">64</div>
+              <div class="seat occupied">65</div>
+              <div class="seat">66</div>
+              <div class="seat occupied">67</div>
+              <div class="seat occupied">68</div>
+              <div class="seat occupied">69</div>
+              <div class="seat">70</div>
+              <div class="seat">71</div>
+              <div class="seat">72</div>
+              <div class="seat">73</div>
+              <div class="seat occupied">74</div>
+              <div class="seat occupied">75</div>
+              <div class="seat occupied">76</div>
+              <div class="seat">77</div>
+              <div class="seat occupied">78</div>
+              <div class="seat occupied">79</div>
+              <div class="seat occupied">80</div>
+              <div class="seat">81</div>
+              <div class="seat">82</div>
+              <div class="seat">83</div>
+              <div class="seat occupied">84</div>
+              <div class="seat occupied">85</div>
+              <div class="seat occupied">86</div>
+              <div class="seat occupied">87</div>
+              <div class="seat">88</div>
+              <div class="seat">89</div>
+              <div class="seat occupied">90</div>
+              <div class="seat occupied">91</div>
+              <div class="seat occupied">92</div>
+              <div class="seat occupied">93</div>
+              <div class="seat occupied">94</div>
+              <div class="seat">95</div>
+              <div class="seat">96</div>
+              <div class="seat">97</div>
+              <div class="seat">98</div>
+              <div class="seat">99</div>
+              <div class="seat occupied">100</div>
+              <div class="seat occupied">101</div>
+              <div class="seat occupied">102</div>
+              <div class="seat occupied">103</div>
+              <div class="seat">104</div>
+              <div class="seat occupied">105</div>
+              <div class="seat">106</div>
+              <div class="seat">107</div>
+              <div class="seat occupied">108</div>
+              <div class="seat occupied">109</div>
+              <div class="seat occupied">110</div>
+              <div class="seat occupied">111</div>
+              <div class="seat occupied">112</div>
+              <div class="seat occupied">113</div>
+              <div class="seat">114</div>
+              <div class="seat occupied">115</div>
+              <div class="seat occupied">116</div>
+              <div class="seat">117</div>
+              <div class="seat">118</div>
+              <div class="seat">119</div>
+              <div class="seat occupied">120</div>
+              <div class="seat occupied">121</div>
+              <div class="seat occupied">122</div>
+              <div class="seat">123</div>
+              <div class="seat occupied">124</div>
+              <div class="seat occupied">125</div>
+              <div class="seat">126</div>
+              <div class="seat">127</div>
+              <div class="seat occupied">128</div>
+              <div class="seat occupied">129</div>
+              <div class="seat occupied">130</div>
+              <div class="seat occupied">131</div>
+              <div class="seat occupied">132</div>
+              <div class="seat occupied">133</div>
+              <div class="seat occupied">134</div>
+              <div class="seat occupied">135</div>
+              <div class="seat occupied">136</div>
+              <div class="seat occupied">137</div>
+              <div class="seat occupied">138</div>
+              <div class="seat occupied">139</div>
+              <div class="seat occupied">140</div>
+              <div class="seat occupied">141</div>
+              <div class="seat occupied">142</div>
+              <div class="seat occupied">143</div>
+              <div class="seat occupied">144</div>
+              <div class="seat occupied">145</div>
+              <div class="seat">146</div>
+              <div class="seat">147</div>
+              <div class="seat occupied">148</div>
+              <div class="seat occupied">149</div>
+              <div class="seat occupied">150</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item yellow"></div>
+              <span>Selected</span>
+            <div class="legend-item lightskyblue"></div>
+              <span>Booked</span>
+            <div class="legend-item lightgreen"></div>
+              <span>Available</span>
+            </div>
+  <script src="script.js"> </script>
+</body>
+</html>
